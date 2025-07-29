@@ -3,310 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>飲食店専門コンサルタント - [あなたの名前]</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <title>飲食店経営ラボ - プロのノウハウ集</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --primary-color: #c67a53; /* 温かみのあるブラウン */
-            --secondary-color: #e8a07d; /* 明るいオレンジ */
-            --background-color: #fdfaf7; /* ほんのり色づいた背景 */
-            --text-color: #4a3f35; /* ダークブラウン */
-            --header-bg: #ffffff;
-        }
         body {
             font-family: 'Noto Sans JP', sans-serif;
-            line-height: 1.8;
             margin: 0;
-            padding: 0;
-            background-color: var(--background-color);
-            color: var(--text-color);
+            background-color: #f9f8f6;
+            color: #333;
         }
         .container {
-            width: 85%;
-            max-width: 1100px;
-            margin: auto;
-            overflow: hidden;
+            max-width: 1200px;
+            margin: 0 auto;
             padding: 0 20px;
         }
-        header {
-            background: var(--header-bg);
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        /* Header */
+        .site-header {
+            background-color: #fff;
             padding: 20px 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            border-bottom: 3px solid var(--primary-color);
+            border-bottom: 1px solid #eee;
+            text-align: center;
         }
-        header a {
-            color: var(--primary-color);
+        .site-header h1 {
+            margin: 0;
+            font-size: 32px;
+            color: #333;
+        }
+        .site-header a {
             text-decoration: none;
+            color: inherit;
+        }
+        .main-nav {
+            background-color: #333;
+            padding: 10px 0;
+        }
+        .main-nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-align: center;
+        }
+        .main-nav li {
+            display: inline-block;
+            margin: 0 20px;
+        }
+        .main-nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
             font-weight: 700;
         }
-        header #branding h1 {
-            margin: 0;
-            font-family: 'Poppins', sans-serif;
+
+        /* Main Content */
+        .main-content {
+            padding: 40px 0;
+        }
+        .page-title {
+            text-align: center;
             font-size: 28px;
+            margin-bottom: 40px;
         }
-        header nav {
-            float: right;
-            margin-top: 5px;
-        }
-        header ul {
-            padding: 0;
-            margin: 0;
-            list-style: none;
-        }
-        header li {
-            display: inline;
-            padding: 0 15px;
-        }
-        #showcase {
-            min-height: 500px;
-            background: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=1974&auto=format&fit=crop') no-repeat center center/cover;
-            text-align: center;
-            color: #fff;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
-        }
-        #showcase h1 {
-            font-family: 'Poppins', sans-serif;
-            font-size: 50px;
-            margin-bottom: 15px;
-        }
-        #showcase p {
-            font-size: 22px;
-        }
-        section {
-            padding: 60px 0;
-            border-bottom: 1px solid #e0dcd7;
-        }
-        .section-title {
-            text-align: center;
-            padding-bottom: 40px;
-            font-family: 'Poppins', sans-serif;
-            font-size: 36px;
-            color: var(--primary-color);
-        }
-        #about {
-            display: flex;
-            align-items: center;
-            gap: 40px;
-        }
-        #about img {
-            border-radius: 50%;
-            width: 200px;
-            height: 200px;
-            object-fit: cover;
-            border: 5px solid var(--secondary-color);
-        }
-        #about-text {
-            flex: 1;
-        }
-        #services .grid {
+        .article-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
         }
-        .service-box {
-            background: #fff;
-            padding: 30px;
-            text-align: center;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-            transition: transform 0.3s ease;
+        .article-card {
+            background-color: #fff;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            overflow: hidden;
+            text-decoration: none;
+            color: #333;
+            transition: box-shadow 0.3s ease;
         }
-        .service-box:hover {
-            transform: translateY(-10px);
+        .article-card:hover {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
-        .service-box i {
-            font-size: 45px;
-            margin-bottom: 15px;
-            color: var(--primary-color);
+        .article-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
         }
-        .service-box h3 {
-            font-family: 'Poppins', sans-serif;
-            font-size: 22px;
-            color: var(--text-color);
-        }
-        #testimonials {
-            background: var(--secondary-color);
-            color: #fff;
-        }
-        #testimonials .section-title {
-            color: #fff;
-        }
-        .testimonial {
-            background: rgba(255,255,255,0.2);
+        .article-card-content {
             padding: 20px;
-            border-radius: 10px;
-            margin-bottom: 20px;
         }
-        .testimonial p {
-            font-style: italic;
-        }
-        .testimonial span {
-            font-weight: bold;
-            display: block;
-            text-align: right;
-            margin-top: 10px;
-        }
-        #contact {
-            background: #fff;
-        }
-        #contact form {
-            max-width: 700px;
-            margin: 20px auto;
-            padding: 30px;
-            background: var(--background-color);
-            border-radius: 10px;
-            border: 1px solid #e0dcd7;
-        }
-        #contact input[type="text"], #contact input[type="email"], #contact textarea {
-            width: 100%;
-            padding: 15px;
-            margin-bottom: 15px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-            box-sizing: border-box;
-            font-family: 'Noto Sans JP', sans-serif;
-        }
-        #contact button {
-            display: block;
-            width: 100%;
-            padding: 15px;
-            border: none;
-            background: var(--primary-color);
+        .article-card .category {
+            display: inline-block;
+            background-color: #5a8fb4;
             color: #fff;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 18px;
-            font-family: 'Poppins', sans-serif;
-            transition: background-color 0.3s ease;
+            padding: 5px 10px;
+            font-size: 12px;
+            border-radius: 4px;
+            margin-bottom: 10px;
         }
-        #contact button:hover {
-            background: var(--secondary-color);
+        .article-card h3 {
+            margin: 0 0 10px 0;
+            font-size: 20px;
         }
-        footer {
+        .article-card p {
+            margin: 0;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        .site-footer {
+            background-color: #333;
+            color: #fff;
             text-align: center;
-            padding: 30px;
-            background: var(--text-color);
-            color: #fff;
+            padding: 40px 0;
+            margin-top: 40px;
         }
-        /* Responsive */
-        @media(max-width: 768px){
-            header #branding, header nav {
-                float: none;
-                text-align: center;
-                width: 100%;
-            }
-            header nav {
-                margin-top: 10px;
-            }
-            #showcase h1 {
-                font-size: 36px;
-            }
-            #about {
-                flex-direction: column;
-                text-align: center;
-            }
-            .container {
-                width: 90%;
-            }
+        .site-footer p {
+            margin: 0;
         }
     </style>
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <header>
+
+    <header class="site-header">
         <div class="container">
-            <div id="branding">
-                <h1><a href="index.html">[あなたの名前]</a></h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#about">私について</a></li>
-                    <li><a href="#services">サービス</a></li>
-                    <li><a href="#testimonials">お客様の声</a></li>
-                    <li><a href="#contact">お問い合わせ</a></li>
-                </ul>
-            </nav>
+            <h1><a href="index.html">飲食店経営ラボ</a></h1>
+            <p>オーナー様のための、繁盛店づくりのヒント集</p>
         </div>
     </header>
 
-    <section id="showcase">
+    <nav class="main-nav">
         <div class="container">
-            <h1>あなたのお店の「美味しい」を「繁盛」へ</h1>
-            <p>飲食店専門コンサルタントが、情熱と経験で売上アップを強力にサポートします。</p>
+            <ul>
+                <li><a href="#">店舗運営</a></li>
+                <li><a href="#">メニュー開発</a></li>
+                <li><a href="#">集客・販促</a></li>
+                <li><a href="#">資金調達</a></li>
+                <li><a href="#">インタビュー</a></li>
+            </ul>
         </div>
-    </section>
+    </nav>
 
-    <section id="about" class="container">
-        <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?q=80&w=1954&auto=format&fit=crop" alt="あなたの写真">
-        <div id="about-text">
-            <h2 class="section-title" style="text-align: left; padding-bottom: 20px;">オーナー様と共に走る、情熱のコンサルタント</h2>
-            <p>
-                はじめまして！飲食店専門コンサルタントの[あなたの名前]です。私自身、長年飲食の現場に立ち、喜びも厳しさも経験してきました。その経験から培ったノウハウと情熱で、オーナー様一人ひとりの夢や目標に寄り添い、お店の魅力を最大限に引き出すお手伝いをします。「何から手をつければいいか分からない」そんな時こそ、ぜひお声がけください。
-            </p>
-        </div>
-    </section>
-
-    <section id="services">
-        <div class="container">
-            <h2 class="section-title">サービス内容</h2>
-            <div class="grid">
-                <div class="service-box">
-                    <i class="fas fa-utensils"></i>
-                    <h3>売上アップ支援</h3>
-                    <p>現状分析から課題を抽出し、客単価と集客数を向上させる具体的な施策をご提案。リピーターを増やす仕組みを作ります。</p>
+    <main class="main-content container">
+        <h2 class="page-title">新着記事</h2>
+        <div class="article-grid">
+            <!-- Article 1 -->
+            <a href="article.html" class="article-card">
+                <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?q=80&w=1974&auto=format&fit=crop" alt="">
+                <div class="article-card-content">
+                    <span class="category">店舗運営</span>
+                    <h3>常連客を増やす！リピート率を劇的に上げる5つの方法</h3>
+                    <p>一度来てくれたお客様を、お店のファンにするための具体的な接客術や仕組みづくりについて解説します。</p>
                 </div>
-                <div class="service-box">
-                    <i class="fas fa-lightbulb"></i>
-                    <h3>新メニュー開発・改善</h3>
-                    <p>お店のコンセプトに合った、利益率の高い看板メニューや季節限定メニューを開発。既存メニューの改善もサポートします。</p>
+            </a>
+            <!-- Article 2 -->
+            <a href="article.html" class="article-card">
+                <img src="https://images.unsplash.com/photo-1579684947214-c2a36e03c598?q=80&w=2070&auto=format&fit=crop" alt="">
+                <div class="article-card-content">
+                    <span class="category">メニュー開発</span>
+                    <h3>原価率30%の壁を破る！利益を生み出すメニュー考案術</h3>
+                    <p>美味しいだけでなく、しっかりと利益も確保できるメニュー作りのコツを、事例を交えてご紹介します。</p>
                 </div>
-                <div class="service-box">
-                    <i class="fas fa-bullhorn"></i>
-                    <h3>集客・販促サポート</h3>
-                    <p>SNS活用、Webサイト改善、イベント企画など、低コストで始められる効果的な集客方法をご提案します。</p>
+            </a>
+            <!-- Article 3 -->
+            <a href="article.html" class="article-card">
+                <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?q=80&w=2070&auto=format&fit=crop" alt="">
+                <div class="article-card-content">
+                    <span class="category">集客・販促</span>
+                    <h3>お金をかけずに始める！飲食店のSNS集客【Instagram編】</h3>
+                    <p>今や必須のSNS集客。特に飲食店と相性の良いInstagramを活用したファン作りと来店促進のテクニック。</p>
                 </div>
-            </div>
+            </a>
+            <!-- Add more articles as needed -->
         </div>
-    </section>
+    </main>
 
-    <section id="testimonials">
+    <footer class="site-footer">
         <div class="container">
-            <h2 class="section-title">お客様の声</h2>
-            <div class="testimonial">
-                <p>「相談して本当に良かった！おかげさまで、売上が前年比150%を達成できました。特にSNSの活用法は目からウロコでした。」</p>
-                <span>- カフェ・オーナ様</span>
-            </div>
-            <div class="testimonial">
-                <p>「新メニューの考案で行き詰まっていましたが、的確なアドバイスで素晴らしい看板商品が生まれました。お客様にも大好評です！」</p>
-                <span>- 居酒屋・店主様</span>
-            </div>
+            <p>&copy; 2025 飲食店経営ラボ. All Rights Reserved.</p>
         </div>
-    </section>
-
-    <section id="contact">
-        <div class="container">
-            <h2 class="section-title">初回相談は無料です</h2>
-            <p style="text-align: center;">あなたのお店の悩み、ぜひお聞かせください。共に解決の道を探しましょう。</p>
-            <form>
-                <input type="text" placeholder="お店の名前">
-                <input type="text" placeholder="お名前">
-                <input type="email" placeholder="メールアドレス">
-                <textarea placeholder="ご相談内容を簡単にお聞かせください" rows="5"></textarea>
-                <button type="submit">相談してみる</button>
-            </form>
-        </div>
-    </section>
-
-    <footer>
-        <p>Copyright &copy; 2025 [あなたの名前/会社名]</p>
     </footer>
+
 </body>
 </html>
