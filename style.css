@@ -363,3 +363,38 @@ body {
 .article-body a:hover {
     text-decoration: underline;
 }
+
+.article-section {
+    margin-bottom: 40px;
+}
+
+.article-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.article-section ul {
+    padding-left: 20px;
+}
+
+.article-section li {
+    margin-bottom: 10px;
+}
+
+.tip-box {
+    background-color: #fdfaf7;
+    border: 2px dashed var(--secondary-color);
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.tip-box h2 {
+    border-bottom: none;
+    margin-bottom: 15px;
+    font-size: 24px;
+}

@@ -4,122 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>お客様アンケート、集めるだけで満足していませんか？ - 飲食店経営のミカタ</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Noto Sans JP', sans-serif;
-            margin: 0;
-            background-color: #f8f9fa;
-            color: #343a40;
-            line-height: 1.8;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        /* Header */
-        .site-header {
-            background-color: #fff;
-            padding: 20px 0;
-            border-bottom: 1px solid #dee2e6;
-        }
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1140px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        .site-branding h1 {
-            margin: 0;
-            font-family: 'Roboto', sans-serif;
-            font-size: 28px;
-        }
-        .site-branding a {
-            text-decoration: none;
-            color: #212529;
-            font-weight: 700;
-        }
-        .main-nav ul {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-        .main-nav li {
-            display: inline-block;
-            margin-left: 25px;
-        }
-        .main-nav a {
-            text-decoration: none;
-            color: #495057;
-            font-weight: 700;
-            font-size: 16px;
-        }
-
-        /* Article Content */
-        .article-container {
-            background-color: #fff;
-            margin: 40px auto;
-            padding: 40px 50px;
-            border: 1px solid #dee2e6;
-            border-radius: 5px;
-        }
-        .article-header .category {
-            color: #dc3545; /* Red for repeat */
-            font-weight: 700;
-            font-size: 16px;
-            margin-bottom: 10px;
-        }
-        .article-header h1 {
-            font-size: 36px;
-            margin: 0 0 15px 0;
-            line-height: 1.4;
-        }
-        .article-meta {
-            font-size: 14px;
-            color: #6c757d;
-            margin-bottom: 30px;
-        }
-        .article-eyecatch {
-            width: 100%;
-            height: auto;
-            border-radius: 5px;
-            margin-bottom: 40px;
-        }
-        .article-body h2 {
-            font-size: 28px;
-            margin-top: 40px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #dc3545;
-        }
-        .article-body p {
-            font-size: 17px;
-            margin-bottom: 20px;
-        }
-        .article-body a {
-            color: #dc3545;
-            font-weight: 700;
-        }
-
-        /* Footer */
-        .site-footer {
-            background-color: #343a40;
-            color: #fff;
-            text-align: center;
-            padding: 40px 0;
-            margin-top: 40px;
-        }
-        .site-footer p {
-            margin: 0;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header class="site-header">
-        <div class="header-content">
+        <div class="container header-content">
             <div class="site-branding">
                 <h1><a href="index.html">飲食店経営のミカタ</a></h1>
             </div>
@@ -135,31 +26,78 @@
     </header>
 
     <div class="container page-wrapper">
-    <main class="main-content">
-        <article class="article-container">
-            <header class="article-header">
-                <p class="category">リピート対策</p>
-                <h1>お客様アンケート、集めるだけで満足していませんか？</h1>
-                <p class="article-meta">公開日: 2025年7月21日</p>
-            </header>
+        <main class="main-content">
+            <article class="article-container">
+                <header class="article-header">
+                    <p class="category category-repeat">リピート対策</p>
+                    <h1>お客様アンケート、集めるだけで満足していませんか？</h1>
+                    <p class="article-meta">公開日: 2025年7月21日</p>
+                </header>
 
-            <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=2070&auto=format&fit=crop" alt="" class="article-eyecatch">
+                <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=2070&auto=format&fit=crop" alt="" class="article-eyecatch">
 
-            <div class="article-body">
-                <p>お客様の声を直接聞くことができる「お客様アンケート」。多くの飲食店が実施していますが、その貴重なご意見を、本当に活かしきれているでしょうか？集計して眺めるだけでは、宝の持ち腐れです。アンケート結果を分析し、具体的な改善アクションに繋げることで、お客様の満足度を高め、リピート率を向上させることができます。</p>
-                
-                <h2>1. 回答しやすいアンケートを設計する</h2>
-                <p>長すぎるアンケートは、お客様に負担をかけてしまい、回答率が下がります。質問は5〜7問程度に絞り、選択式を中心に設計しましょう。Googleフォームなどを活用すれば、無料で簡単にWebアンケートを作成でき、集計も自動化できるのでおすすめです。</p>
+                <div class="article-body">
 
-                <h2>2. ポジティブな意見もネガティブな意見も真摯に受け止める</h2>
-                <p>お褒めの言葉はスタッフのモチベーションになりますし、厳しいご意見こそ、お店が成長するためのヒントが隠されています。特に、ネガティブな意見に対しては、真摯に受け止め、改善策を検討し、可能であれば「〇〇のご意見を受け、改善しました」と店内やSNSで報告することで、お客様からの信頼を高めることができます。</p>
+                    <section class="article-section">
+                        <h2>1. そのアンケート、本当に「活かせて」いますか？</h2>
+                        <p>「お客様の声を聞くのは大切だ」と、多くの方がお客様アンケートを実施していることと思います。しかし、こんな風に感じたことはありませんか？</p>
+                        <ul>
+                            <li>「アンケートは集まるけど、結局どう活かせばいいか分からない…」</li>
+                            <li>「良い意見ばかりで、お店の課題が見えてこない…」</li>
+                            <li>「忙しくて、集計する時間も、改善する時間もない…」</li>
+                        </ul>
+                        <p>もし、アンケートが「集めるだけ」で終わってしまっているなら、それは非常にもったいないことです。お客様の貴重な声は、お店を成長させ、リピート率を向上させるための宝の山なのです。</p>
+                    </section>
 
-                <h2>3. アンケート回答者への特典を用意する</h2>
-                <p>アンケートに協力していただいたお客様には、感謝の気持ちとして、次回使えるクーポンなどをプレゼントしましょう。回答率が向上するだけでなく、「自分の声がお店に届いた」という実感を持つことができ、再来店にも繋がります。</p>
+                    <section class="article-section">
+                        <h2>2. お客様の声を「売上」に変える、アンケート活用術</h2>
+                        <p>お客様アンケートの真の価値は、<strong>集めた声を分析し、具体的な改善アクションに繋げること</strong>にあります。お客様の不満を解消し、期待を超えるサービスを提供することで、満足度は高まり、自然とリピートに繋がります。この記事では、お客様の声を「売上」に変えるための、アンケート活用術を3つのステップでご紹介します。</p>
+                    </section>
 
-            </div>
-        </article></main>
-    </div>
+                    <section class="article-section">
+                        <h2>3. お客様の声を活かす！アンケート活用3つのステップ</h2>
+                        
+                        <h3>ステップ1：お客様が「答えやすい」アンケート設計</h3>
+                        <p>アンケートは、お客様にとって負担にならないよう、<strong>質問数を5〜7問程度に絞り、選択式をメイン</strong>にしましょう。自由記述欄は、本当に伝えたいことがあるお客様のために、最後に少しだけ設けるのがおすすめです。Webアンケートツール（Googleフォームなど）を活用すれば、集計の手間も省け、回答率も向上します。</p>
+
+                        <h3>ステップ2：ポジティブもネガティブも「真摯」に受け止める</h3>
+                        <p>「美味しかった」「また来ます」といったポジティブな意見は、スタッフのモチベーションに繋がります。一方で、「〇〇が気になった」「△△が改善されればもっと良い」といったネガティブな意見こそ、お店が成長するための貴重なヒントです。<strong>どんな意見にも真摯に耳を傾け、改善策を検討する姿勢</strong>が、お客様からの信頼を深めます。</p>
+
+                        <h3>ステップ3：回答者には「感謝」と「特典」を</h3>
+                        <p>アンケートに協力してくれたお客様には、感謝の気持ちを伝え、次回使える割引クーポンやドリンクサービスなどの特典を用意しましょう。これにより、回答率が向上するだけでなく、お客様は「自分の声がお店に届いた」と感じ、お店への愛着が深まります。<strong>「ご意見ありがとうございました。次回ご来店時に、ぜひお使いください」</strong>といった一言を添えるのが効果的です。</p>
+                    </section>
+
+                    <section class="article-section">
+                        <h2>4. アンケートで「隠れたニーズ」を発見したカフェの実例</h2>
+                        <p>あるカフェのオーナーは、お客様アンケートで「もっと軽食の種類を増やしてほしい」という意見が複数あることに気づきました。それまで、カフェはドリンクとスイーツがメインだと考えていたため、全く意識していなかったニーズでした。</p>
+                        <p>そこで、試しに「ミニサンドイッチ」と「スープ」をメニューに追加したところ、これが大ヒット。特にランチタイムの売上が大きく伸び、新しい客層の獲得にも繋がりました。お客様の「小さな声」の中に、お店の成長のヒントが隠されていることを、改めて実感した事例です。</p>
+                    </section>
+
+                    <section class="article-section">
+                        <h2>5. よくある失敗：アンケート結果を「共有しない」</h2>
+                        <p>アンケートを集計し、改善策を検討しても、その結果が現場のスタッフに共有されていなければ、意味がありません。お客様からの意見は、お店をより良くするための「共通の目標」です。<strong>「お客様からこんなご意見をいただいたから、〇〇を改善しよう」</strong>と、具体的な行動に繋がるように、スタッフ全員で共有しましょう。</p>
+                        <p>また、改善した内容を店内POPやSNSで発信することで、お客様にも「意見を聞いてくれた」という満足感を与え、お店への信頼感を高めることができます。</p>
+                    </section>
+
+                    <section class="article-section">
+                        <h2>6. まとめ：アンケートは、お客様との「対話」の始まり</h2>
+                        <p>お客様アンケートは、単なる情報収集ツールではありません。お客様とお店が「対話」を始めるための、大切なきっかけです。あなたのお店では、お客様の声に真剣に耳を傾け、活かせていますか？</p>
+                        <ul>
+                            <li><strong>お客様が「本音」を話せる環境がありますか？</strong></li>
+                            <li><strong>集まった意見を、具体的な改善に繋げていますか？</strong></li>
+                            <li><strong>改善したことを、お客様に伝えていますか？</strong></li>
+                        </ul>
+                        <p>お客様の声を大切にすることで、お店は成長し、お客様は「自分の意見が反映されるお店」として、より一層の愛着を持ってくれるはずです。今日から、お客様との「対話」を始めてみませんか。</p>
+                    </section>
+
+                    <section class="article-section tip-box">
+                        <h2>【ワンポイントTip】</h2>
+                        <p>アンケートの回答率を上げるには、QRコードを活用するのがおすすめです。テーブルにQRコードを設置し、「アンケートに答えてくれた方には、次回使えるドリンク無料券をプレゼント！」といった特典を明記しましょう。お客様は手軽に回答でき、お店はスムーズにデータを収集できます。</p>
+                    </section>
+
+                </div>
+            </article>
+        </main>
 
         <aside class="sidebar">
             <div class="widget">
@@ -186,9 +124,9 @@
             </div>
         </aside>
     </div>
+
     <footer class="site-footer">
-    <div class="container page-wrapper">
-        <main class="main-content">
+        <div class="container">
             <p>&copy; 2025 飲食店経営のミカタ. All Rights Reserved.</p>
         </div>
     </footer>

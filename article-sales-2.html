@@ -4,122 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>フード原価、本当に適正ですか？利益を最大化する原価管理術 - 飲食店経営のミカタ</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Noto Sans JP', sans-serif;
-            margin: 0;
-            background-color: #f8f9fa;
-            color: #343a40;
-            line-height: 1.8;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        /* Header */
-        .site-header {
-            background-color: #fff;
-            padding: 20px 0;
-            border-bottom: 1px solid #dee2e6;
-        }
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1140px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        .site-branding h1 {
-            margin: 0;
-            font-family: 'Roboto', sans-serif;
-            font-size: 28px;
-        }
-        .site-branding a {
-            text-decoration: none;
-            color: #212529;
-            font-weight: 700;
-        }
-        .main-nav ul {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-        .main-nav li {
-            display: inline-block;
-            margin-left: 25px;
-        }
-        .main-nav a {
-            text-decoration: none;
-            color: #495057;
-            font-weight: 700;
-            font-size: 16px;
-        }
-
-        /* Article Content */
-        .article-container {
-            background-color: #fff;
-            margin: 40px auto;
-            padding: 40px 50px;
-            border: 1px solid #dee2e6;
-            border-radius: 5px;
-        }
-        .article-header .category {
-            color: #007bff;
-            font-weight: 700;
-            font-size: 16px;
-            margin-bottom: 10px;
-        }
-        .article-header h1 {
-            font-size: 36px;
-            margin: 0 0 15px 0;
-            line-height: 1.4;
-        }
-        .article-meta {
-            font-size: 14px;
-            color: #6c757d;
-            margin-bottom: 30px;
-        }
-        .article-eyecatch {
-            width: 100%;
-            height: auto;
-            border-radius: 5px;
-            margin-bottom: 40px;
-        }
-        .article-body h2 {
-            font-size: 28px;
-            margin-top: 40px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #007bff;
-        }
-        .article-body p {
-            font-size: 17px;
-            margin-bottom: 20px;
-        }
-        .article-body a {
-            color: #007bff;
-            font-weight: 700;
-        }
-
-        /* Footer */
-        .site-footer {
-            background-color: #343a40;
-            color: #fff;
-            text-align: center;
-            padding: 40px 0;
-            margin-top: 40px;
-        }
-        .site-footer p {
-            margin: 0;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header class="site-header">
-        <div class="header-content">
+        <div class="container header-content">
             <div class="site-branding">
                 <h1><a href="index.html">飲食店経営のミカタ</a></h1>
             </div>
@@ -135,31 +26,77 @@
     </header>
 
     <div class="container page-wrapper">
-    <main class="main-content">
-        <article class="article-container">
-            <header class="article-header">
-                <p class="category">売上アップ</p>
-                <h1>フード原価、本当に適正ですか？利益を最大化する原価管理術</h1>
-                <p class="article-meta">公開日: 2025年7月28日</p>
-            </header>
+        <main class="main-content">
+            <article class="article-container">
+                <header class="article-header">
+                    <p class="category category-sales">売上アップ</p>
+                    <h1>フード原価、本当に適正ですか？利益を最大化する原価管理術</h1>
+                    <p class="article-meta">公開日: 2025年7月28日</p>
+                </header>
 
-            <img src="https://images.unsplash.com/photo-1578496479533-7022447f3832?q=80&w=1974&auto=format&fit=crop" alt="" class="article-eyecatch">
+                <img src="https://images.unsplash.com/photo-1578496479533-7022447f3832?q=80&w=1974&auto=format&fit=crop" alt="" class="article-eyecatch">
 
-            <div class="article-body">
-                <p>美味しい料理を提供することは大前提ですが、それだけではお店の利益は確保できません。飲食店の利益を最大化するためには、適切な「原価管理」が不可欠です。この記事では、どんぶり勘定から脱却し、利益を生み出すための原価管理の基本と実践的なテクニックをご紹介します。</p>
-                
-                <h2>1. 正確な原価計算がすべての始まり</h2>
-                <p>まずは、メニュー一つひとつの正確な原価を把握することから始めましょう。使用する食材の量（ポーション）を正確に測り、それぞれの仕入れ価格に基づいて計算します。調味料や光熱費なども「歩留まり」として考慮に入れることが重要です。この地道な作業が、後の価格設定やメニュー改善の土台となります。</p>
+                <div class="article-body">
+                    
+                    <section class="article-section">
+                        <h2>1. その「どんぶり勘定」、危険信号かもしれません</h2>
+                        <p>毎日忙しくキッチンに立ち、美味しい料理を提供することに全力を注いでいるあなた。でも、少し立ち止まって考えてみてください。こんな疑問を感じたことはありませんか？</p>
+                        <ul>
+                            <li>「一生懸命働いているのに、なぜか手元にお金が残らない…」</li>
+                            <li>「看板メニュー、実はほとんど利益が出ていないのかもしれない…」</li>
+                            <li>「食材のロスが多い気がするけど、見て見ぬふりをしている…」</li>
+                        </ul>
+                        <p>もしドキッとしたなら、それは「どんぶり勘定」に陥っているサインかもしれません。しかし、ご安心ください。正しい原価管理の方法を知れば、あなたのお店はもっと利益を出せるようになります。</p>
+                    </section>
 
-                <h2>2. FLコストを意識した価格設定</h2>
-                <p>飲食店のコスト構造で最も大きな割合を占めるのが、F（Food：食材費）とL（Labor：人件費）です。この2つを合わせた「FLコスト」を売上の60%以内に抑えるのが理想とされています。原価（F）だけでなく、調理にかかる手間（L）も考慮して価格設定を行うことで、健全な利益構造を作ることができます。</p>
+                    <section class="article-section">
+                        <h2>2. 「利益」を生み出す、攻めの原価管理へ</h2>
+                        <p>原価管理と聞くと、「コストを削る」という守りのイメージが強いかもしれません。しかし、私たちが目指すのは、<strong>メニューの価値を正しく把握し、戦略的に利益を生み出す「攻めの原価管理」</strong>です。この記事では、難しい計算は苦手という方でも今日から実践できる、3つのシンプルなステップをご紹介します。</p>
+                    </section>
 
-                <h2>3. 定期的な棚卸しで在庫を最適化</h2>
-                <p>月に一度は必ず棚卸しを行い、実際の在庫と帳簿上の在庫を照らし合わせましょう。これにより、食材のロス（廃棄、過剰在庫）を正確に把握し、改善策を立てることができます。また、在庫の回転率を意識することで、キャッシュフローの改善にも繋がります。</p>
+                    <section class="article-section">
+                        <h2>3. 利益最大化への3つのステップ</h2>
+                        
+                        <h3>ステップ1：メニューの「原価」を正確に知る</h3>
+                        <p>まずは、看板メニューの原価を一つ、正確に計算してみましょう。例えば「特製ナポリタン」。パスタ、玉ねぎ、ピーマン、ベーコン、ケチャップなど、使う食材をすべて書き出し、一皿あたりの使用量と仕入れ価格から原価を算出します。このとき、<strong>ガス代や水道代などの経費も「歩留まり率」として5〜10%上乗せして計算する</strong>のがプロのやり方です。</p>
 
-            </div>
-        </article></main>
-    </div>
+                        <h3>ステップ2：「FLコスト」という最強の指標を持つ</h3>
+                        <p>飲食店の経営で最も重要な指標が<strong>FLコスト</strong>です。これは、F（Food=食材費）とL（Labor=人件費）を合わせた費用のこと。このFLコストが、売上に対して何パーセントか（FL比率）を常に意識することが重要です。一般的に、<strong>この比率が60%を超えると、経営が厳しい状態</strong>だと言われています。あなたのFL比率は、今何%でしょうか？</p>
+
+                        <h3>ステップ3：月に一度の「棚卸し」で宝探し</h3>
+                        <p>「棚卸し」と聞くと面倒に感じるかもしれませんが、これはお店の隠れた課題を見つけ出す「宝探し」のようなものです。月に一度、月末などに在庫を数えることで、<strong>「思ったより使われていない食材」や「原因不明のロス」が明らかになります。</strong>これにより、仕入れ量の調整や、ロスが出やすい食材を使った新メニューの開発など、具体的な改善策に繋がります。</p>
+                    </section>
+
+                    <section class="article-section">
+                        <h2>4. 私が経験した、原価管理の失敗談</h2>
+                        <p>私がまだ駆け出しの頃、自分のカフェで「自家製ローストビーフサンド」というメニューが人気でした。しかし、売れれば売れるほど、なぜかお店の利益は増えません。不思議に思い、初めて真剣に原価計算をしてみたところ、衝撃の事実が判明しました。なんと、原価率が70%を超えていたのです。</p>
+                        <p>原因は、焼き上げる際の肉の目減りや、切り落とし部分のロスを全く計算に入れていなかったこと。お客様に喜んでほしい一心でしたが、これでは商売になりません。この苦い経験から、正確な原価把握の重要性を痛感しました。</p>
+                    </section>
+
+                    <section class="article-section">
+                        <h2>5. よくある失敗：「原価率」の罠</h2>
+                        <p>多くのオーナーが陥りがちなのが、「すべてのメニューの原価率を30%にしなければ」という思い込みです。しかし、これは大きな間違い。例えば、ドリンクのように原価が低く、利益を稼ぎやすい「儲け頭メニュー」もあれば、看板商品として原価が高くても集客の要となる「おとりメニュー」も必要です。</p>
+                        <p>大切なのは、<strong>お店全体のメニューをトータルで見て、平均の原価率が目標値に着地するようにコントロールすること。</strong>すべてのメニューを一律の基準で考えるのではなく、それぞれの役割を意識した戦略的な価格設定が求められます。</p>
+                    </section>
+
+                    <section class="article-section">
+                        <h2>6. まとめ：まずは「看板メニュー」の原価計算から</h2>
+                        <p>利益を生み出すための、攻めの原価管理。その重要性をご理解いただけたでしょうか。難しいことはありません。まずは、あなたのお店の「一番人気メニュー」の原価計算から始めてみてください。</p>
+                        <ul>
+                            <li><strong>そのメニューの原価は、正確にいくらですか？</strong></li>
+                            <li><strong>そのメニューは、お店にどれくらいの利益をもたらしていますか？</strong></li>
+                        </ul>
+                        <p>この2つの質問に自信を持って答えられるようになったとき、あなたのお店の経営は、間違いなく次のステージへと進んでいます。</p>
+                    </section>
+
+                    <section class="article-section tip-box">
+                        <h2>【ワンポイントTip】</h2>
+                        <p>原価計算を簡単にする便利なアプリや、Excelのテンプレートがたくさん無料で公開されています。「飲食店 原価計算 アプリ」などで検索してみてください。ITツールをうまく活用することで、計算の手間を大幅に削減できますよ。</p>
+                    </section>
+
+                </div>
+            </article>
+        </main>
 
         <aside class="sidebar">
             <div class="widget">
@@ -186,9 +123,9 @@
             </div>
         </aside>
     </div>
+
     <footer class="site-footer">
-    <div class="container page-wrapper">
-        <main class="main-content">
+        <div class="container">
             <p>&copy; 2025 飲食店経営のミカタ. All Rights Reserved.</p>
         </div>
     </footer>
