@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+
+:root {
+    --primary-color: #a16a50;
+    --secondary-color: #d4a373;
+    --background-color: #fefae0;
+    --text-color: #4f4a45;
+    --header-bg: #ffffff;
+    --card-bg: #ffffff;
+    --footer-bg: #4f4a45;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    margin: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.7;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.site-header {
+    background-color: var(--header-bg);
+    padding: 20px 0;
+    border-bottom: 3px solid var(--primary-color);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-branding h1 {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+}
+
+.site-branding a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.main-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 700;
+    font-size: 16px;
+    transition: color 0.2s ease-in-out;
+}
+
+.main-nav a:hover, .main-nav a.active {
+    color: var(--primary-color);
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=2070&auto=format&fit=crop') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    margin: 0 0 15px 0;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.hero p {
+    font-size: 20px;
+    opacity: 0.9;
+    margin: 0;
+}
+
+/* Main Content */
+.main-content {
+    padding: 60px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    margin-bottom: 40px;
+    color: var(--primary-color);
+}
+
+.article-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.article-card {
+    background-color: var(--card-bg);
+    border: 1px solid #e9e4d8;
+    border-radius: 10px;
+    overflow: hidden;
+    text-decoration: none;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.article-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.article-card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.article-card-content {
+    padding: 25px;
+    flex-grow: 1;
+}
+
+.article-card .category {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.category-sales { color: #c08552; }
+.category-marketing { color: #7f5539; }
+.category-repeat { color: #9c6644; }
+
+.article-card h3 {
+    margin: 0 0 10px 0;
+    font-size: 22px;
+    line-height: 1.5;
+    font-weight: 700;
+}
+
+.article-card p {
+    margin: 0;
+    font-size: 15px;
+    color: #6c757d;
+}
+
+/* Footer */
+.site-footer {
+    background-color: var(--footer-bg);
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+    margin-top: 40px;
+}
+
+.site-footer p {
+    margin: 0;
+    opacity: 0.8;
+}
+
+/* Category Page Specifics */
+.category-title {
+    font-size: 20px;
+    color: #6c757d;
+    text-align: center;
+    margin-bottom: -20px;
+    font-weight: 400;
+}
+
+/* Article Page Specifics */
+.article-container {
+    background-color: #fff;
+    margin: 40px auto;
+    padding: 40px 60px;
+    border: 1px solid #e9e4d8;
+    border-radius: 10px;
+}
+
+.article-header .category {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.article-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    margin: 0 0 15px 0;
+    line-height: 1.3;
+    color: var(--primary-color);
+}
+
+.article-meta {
+    font-size: 14px;
+    color: #6c757d;
+    margin-bottom: 30px;
+}
+
+.article-eyecatch {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.article-body h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    margin-top: 40px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.article-body p {
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.article-body a {
+    color: var(--primary-color);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.article-body a:hover {
+    text-decoration: underline;
+}
